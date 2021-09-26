@@ -1,0 +1,11 @@
+* {
+    font-family: 'Kumbh Sans', sans-serif;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    background-color: #1873c7;
+	height: 100%;
+	width: 100%;
+}

@@ -1,94 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="res/css/style.css">
-    <link rel="shortcut icon" href="res/images/logo.png">
-    <title>postIt</title>
+
+    <title>PostIt</title>
+
+    <!--For Like icons-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+
+    <!--CSS-->
+    <link rel="stylesheet" href="res/css/general.css">
+    <link rel="stylesheet" href="res/css/index.css">
 </head>
+
 <body>
-    <nav>
-        <div>
-            <!--Logo image from https://www.pngwing.com/en/free-png-zbpgn/download-->
-            <img src="res/images/logo.png" alt="postIt logo">
-        </div>
-        <div id="search-bar-container">
-            <input type="text" placeholder="Search text"><button type="submit">Search</button>
-        </div> 
-        <div>
-            <!--User login logo from https://www.cleanpng.com/png-human-resources-login-management-information-payro-1262115/download-png.html-->
-            <img src="res/images/login.png" alt="user logo">
-        </div>
-    </nav>
-    <section class="posts-container">
-        <div class="post-container shadow">
-            <div>
-                <img src="res/images/login.png" alt="user logo">
-                <text>24/9/2021</text>
+    <header>
+        <nav>
+            <div class="icon">
+                <img src="res/images/logo.png" alt="PostIt Icon">
             </div>
-            
-            <img src="res/images/test.png" alt="picture">
-            
-            <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
-                Quae in impedit non tempore quia nisi alias, sapiente illo 
-                quod quo odit esse cupiditate facilis accusantium ullam qui 
-                porro amet laboriosam!
-            </p>
-
-            <div>
-                <button class="like-button">
-                    <!--Thumb logo from https://similarpng.com/thumb-up-like-icon-social-media-transparent-png/-->
-                    <img src="res/images/thumb.png" alt="Like!">
-                </button>
-                
+            <div class="search-container">
+                <input type="text">
+                <button>Search</button>
             </div>
-        </div>
-
-        <div class="post-container shadow">
             <div>
-                <img src="res/images/login.png" alt="user logo">
-                <text>20/9/2021</text>
+                <a href="login.html"><img id="user-image" src="res/images/login.png"/></a>
             </div>
-            <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
-            </p>
-
-            <div>
-                <button class="like-button">
-                    <!--Thumb logo from https://similarpng.com/thumb-up-like-icon-social-media-transparent-png/-->
-                    <img src="res/images/thumb.png" alt="Like!">
-                </button>
-                
+        </nav>
+    </header>
+    <section id="main">
+        <div class="posts-container">
+            <div class="post">
+                <div>
+                    <img id="user-image" src="res/images/login.png"/>
+                    <p> Sep 26, 2021 13:43</p>
+                </div>
+                <img src="res/images/test.png" alt="Some kind of old videogame screenshot">
+                <div class="post-content">
+                    <p class="post-description">I think it's going to rain</p>
+                    <button class="btn btn-like"><i class="fa fa-thumbs-up"></i></button>
+                </div>
+            </div>
+            <div class="post">
+                <div>
+                    <img id="user-image" src="res/images/login.png"/>
+                    <p> Sep 26, 2021 13:43</p>
+                </div>
+                <div class="post-content">
+                    <p class="post-description">Which weighs more, a pound of feathers or a pound of bricks?</p>
+                    <button class="btn btn-like"><i class="fa fa-thumbs-up"></i></button>
+                </div>
+            </div>
+            <div class="post">
+                <div>
+                    <img id="user-image" src="res/images/login.png"/>
+                    <p> Sep 26, 2021 13:43</p>
+                </div>
+                <img src="res/images/test2.png" alt="Batman: Arkham Knight sreenshot">
+                <div class="post-content">
+                    <p class="post-description">Felt cute, might delete later</p><br>
+                    <button class="btn btn-like"><i class="fa fa-thumbs-up"></i></button>
+                </div>
             </div>
         </div>
-
-        <div class="post-container shadow">
-            <div>
-                <img src="res/images/login.png" alt="user logo">
-                <text>19/9/2021</text>
-            </div>
-            
-            <img src="res/images/test2.png" alt="picture">
-            
-            <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
-                Quae in impedit non tempore quia nisi alias, sapiente illo 
-                quod quo odit esse cupiditate facilis accusantium ullam qui 
-                porro amet laboriosam!
-            </p>
-
-            <div>
-                <button class="like-button">
-                    <!--Thumb logo from https://similarpng.com/thumb-up-like-icon-social-media-transparent-png/-->
-                    <img src="res/images/thumb.png" alt="Like!">
-                </button>
-                
-            </div>
-        </div>
-        
     </section>
 </body>
+
 </html>
