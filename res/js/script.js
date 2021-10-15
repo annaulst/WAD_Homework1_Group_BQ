@@ -23,7 +23,7 @@ $(function(){
     let section = $('<section id="main">');
     let postsContainer = $('<div class="posts-container">');
 
-    $.get("res/json/posts.json", function(json_obj) {
+    $.get("http://myjson.dit.upm.es/api/bins/1sbt", function(json_obj) {
         for (obj of json_obj) {
             console.log(obj);
             
@@ -49,7 +49,6 @@ $(function(){
             }
 
             postsContainer.append(post);
-
         }
     });
 
