@@ -15,6 +15,8 @@ header {
     background-color: #ffffff;
 	display: flex;
 	justify-content: center;
+    position: fixed;
+    top: 0;
 }
 
 nav{
@@ -29,7 +31,6 @@ nav{
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	margin: 10px;
 }
 
 .icon img {
@@ -44,7 +45,7 @@ nav{
     height: 30px;
     display: flex;
     justify-content: center;
-    padding: 20px 5px 0px 5px;
+    margin: auto;
 }
 
 .search-container input {
@@ -88,14 +89,15 @@ nav{
     flex-direction: column;
 	
     background-color: #ffffff;
-    margin: 0 auto;
+    margin: 20px auto;
     padding: 60px;
+    margin-bottom: 0;
 }
 
 .post{
     margin: 20px 0;
     box-shadow: 4px 4px 8px 4px rgba(34, 25, 25, 0.4);
-    
+    border-radius: 5px;
 }
 
 .post:hover {
