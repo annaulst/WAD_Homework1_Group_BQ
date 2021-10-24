@@ -44,7 +44,7 @@ $(function(){
     // json validator: https://jsonlint.com/
 
     // retrieve posts.json from online storage
-    $.get("http://myjson.dit.upm.es/api/bins/43dl", function(json_obj) {
+    $.get("http://myjson.dit.upm.es/api/bins/7469", function(json_obj) {
         for (obj of json_obj) {
             console.log(obj);
             
