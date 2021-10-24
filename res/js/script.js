@@ -9,15 +9,33 @@ $(function(){
     let input = $('<input type="text">');
     let button = $('<button>Search</button>');
     let userDiv = $('<div>');
+    let dropdownDiv = $('<div style="display:none" data-hidden="true" class="dropdown-menu">')
+    let userData = $('<p>John Doe</p> <p>john.doe@example.com</p>')
     let userImg = $('<img id="user-image" src="res/images/login.png"/>');
 
     iconDiv.append(img);
     searchDiv.append(input, button);
+    dropdownDiv.append(userData)
     userDiv.append(userImg);
     nav.append(iconDiv, searchDiv, userDiv);
     header.append(nav);
 
     $('body').append(header);
+    $('body').append(dropdownDiv)
+
+    /* add the dropdown menu */
+    $('#user-image').click(function(){
+        if ($('.dropdown-menu').attr("data-hidden") == "true")
+        {
+            $('.dropdown-menu').show()
+            $('.dropdown-menu').attr("data-hidden", "false")
+        }
+        else
+        {
+            $('.dropdown-menu').hide()
+            $('.dropdown-menu').attr("data-hidden", "true")
+        }
+    })
 
     /* add the posts */
     let section = $('<section id="main">');

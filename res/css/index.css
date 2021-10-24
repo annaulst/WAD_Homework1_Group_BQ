@@ -27,6 +27,20 @@ nav{
     justify-content: space-between;
 }
 
+.dropdown-menu {
+    background-color: #ffffff;
+    display: block;
+    justify-content: center;
+    top: 60px;
+    position: fixed;
+    padding: 15px 18px;
+    right: 0px;
+}
+
+#user-image:hover {
+    cursor: pointer;
+}
+
 .icon {
 	display: flex;
 	justify-content: center;
