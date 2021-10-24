@@ -11,7 +11,7 @@ $(function(){
     let userDiv = $('<div>');
     let dropdownDiv = $('<div style="display:none" data-hidden="true" class="dropdown-menu">')
     let userData = $('<p>John Doe</p> <p>john.doe@example.com</p>')
-    let userImg = $('<img id="user-image" src="res/images/login.png"/>');
+    let userImg = $('<img id="user-image" src="res/images/john_doe.png"/>');
 
     iconDiv.append(img);
     searchDiv.append(input, button);
@@ -41,14 +41,17 @@ $(function(){
     let section = $('<section id="main">');
     let postsContainer = $('<div class="posts-container">');
 
+    // json validator: https://jsonlint.com/
+
     // retrieve posts.json from online storage
-    $.get("http://myjson.dit.upm.es/api/bins/1sbt", function(json_obj) {
+    $.get("http://myjson.dit.upm.es/api/bins/43dl", function(json_obj) {
         for (obj of json_obj) {
             console.log(obj);
             
             let post = $('<div class="post"></div>');
             let postHeaderDiv = $('<div>');
-            let userImage = $('<img id="user-image" src="res/images/login.png"/>');
+            let userImage = $('<img id="user-image"/>');
+            userImage.attr("src", obj.userImgSrc);
             let date = $('<p>').text(obj.date);
             let contentDiv = $('<div class="post-content">');
             let postDescription = $('<p class="post-description">').text(obj.post);
@@ -78,7 +81,8 @@ $(function(){
             
             let post = $('<div class="post"></div>');
             let postHeaderDiv = $('<div>');
-            let userImage = $('<img id="user-image" src="res/images/login.png"/>');
+            let userImage = $('<img id="user-image"/>');
+            userImage.attr("src", obj.userImgSrc);
             let date = $('<p>').text(obj.date);
             let contentDiv = $('<div class="post-content">');
             let postDescription = $('<p class="post-description">').text(obj.post);
